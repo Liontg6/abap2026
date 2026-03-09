@@ -22,7 +22,11 @@ define view entity ZFORTNITE_TravelWithCustomer
   t.TotalPrice,
   t.CurrencyCode,
   t.Description,
-  t.Status
+  t.Status,
+  
+  dats_days_between(t.BeginDate, t.EndDate) + 1 as Duration 
+  
+ 
 }
 where
   c.CountryCode = 'DE'
