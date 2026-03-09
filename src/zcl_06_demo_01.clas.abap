@@ -17,13 +17,13 @@ CLASS zcl_06_demo_01 IMPLEMENTATION.
 
   METHOD if_oo_adt_classrun~main.
 
-  DATA travels TYPE TABLE OF /DMO/I_Travel_D.
+    DATA travels TYPE TABLE OF /DMO/C_Booking_Approver_M.
 
-  SELECT from /DMO/I_Travel_D
-    FIELDS *
-    into table @travels.
+    SELECT FROM /DMO/C_Booking_Approver_M
+      FIELDS *
+      INTO TABLE @travels.
 
-  out->write( travels ).
+    out->write( travels ).
 
   ENDMETHOD.
 ENDCLASS.
