@@ -1,0 +1,8 @@
+###ABAP-CDS-01
+##1
+/DMO/BOOKING_M
+/DMO/CUSTOMER
+/DMO/CARRIER
+/DMO/BOOK_STAT
+##2
+Für LH 0400 gibt es 436 einträge
